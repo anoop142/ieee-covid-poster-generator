@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# copyright Anoop S
+# Copyright Anoop S 2020
 # covid-kerala poster generator by Anoop S based on fillerink's ieee-covid-poster-generator
 # completely automated , requires no input from user
 # optionally date can be passed eg: ./make_poster.py "18-05-2020"
