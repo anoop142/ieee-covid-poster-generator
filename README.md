@@ -6,8 +6,16 @@ To run:
 ```
 cd ieee-covid-poster-generator/
 
-
-./makeposter.sh
+./poster_gen.py [dd-mm-yyyy]
+```
+eg: 
+```
+./poster_gen.py 
+```
+ or
+```
+./poster_gen.py 17-05-2020
+```
 ```
 
 
