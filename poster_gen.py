@@ -58,14 +58,10 @@ def make_poster():
         subprocess.call(cmd, shell=True)
     # stitch  district images
     for i in covid_district_data:
-        try:
-            district = i["district"]
-            district_img = district+"_"+i["zone"]+".png"
-            cmd = 'convert {}  ./images/{} -background none -gravity center  -gravity northwest -geometry +{}+{} -composite {}'.format(out_file,district_img,district_image_pos[district][0],district_image_pos[district][1],out_file)
-            subprocess.call(cmd, shell=True)
-        except:
-            print(district)
-            sys.exit()
+        district = i["district"]
+        district_img = district+"_"+i["zone"]+".png"
+        cmd = 'convert {}  ./images/{} -background none -gravity center  -gravity northwest -geometry +{}+{} -composite {}'.format(out_file,district_img,district_image_pos[district][0],district_image_pos[district][1],out_file)
+        subprocess.call(cmd, shell=True)
 
 
 
